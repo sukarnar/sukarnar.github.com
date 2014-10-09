@@ -1,41 +1,14 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	<!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-       <!-- Optional theme -->
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-       <!-- Latest compiled and minified JavaScript -->
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-   
-	<title>My first Front End Web Page</title>
-	</head>
-	<body>
-	<h1>HTML Web Learner</h1>
-	<h2> Hobbies</h2>
-	<div id="myin1">
-	<ul>
-	<li>Music</li>
-	<li>Movies</li>
-	<li>Coding</li>
-	</ul>
-	</div>
-	<div id="myin2">
-	<ol>
-	<li>Classical</li>
-	<li>Matrix</li>
-	<li>Jquery</li>
-	</ol>
-	</div>
-	<div>
-	<h2>Favorite Bird</h2>
-		<img src="http://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg" />
-	<h2> What you hope to get out of this call</h2>
-		<p>I want to have a better understanding of HTML , CSS from this course</p>
-  <h2>Rate Yourself</h2>
-  <p> Advanced</p>
-  </div>
-	</body>
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+  </body>
 </html>
